@@ -84,11 +84,4 @@ app.get("/", async(req,response)=>{
   response.send(opinion);
 }) 
 
-
-
-/*const specs = swaggerJSDoc(options);
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
-*/
-
-
 export default app
