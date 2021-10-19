@@ -10,14 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^6.0.9",
     "morgan": "^1.10.0",
     "node-fetch": "^3.0.0",
+    "nodemon": "^2.0.13",
     "swagger": "^0.7.5",
     "swagger-jsdoc": "^6.1.0",
-    "swagger-ui-express": "^4.1.6",
-    "nodemon": "^2.0.13"
+    "swagger-ui-express": "^4.1.6"
   },
   "repository": {
     "type": "git",

@@ -5,8 +5,9 @@ import swaggerUI from "swagger-ui-express";
 import swaggerJSDoc from "swagger-jsdoc";
 import Opinion from './models/opinion.js'
 import fetch from 'node-fetch'
+import cors from 'cors'
 
-
+app.use(cors());
 /*
 const options = {
     definition: {
