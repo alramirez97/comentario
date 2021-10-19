@@ -7,14 +7,7 @@ import Opinion from './models/opinion.js'
 import fetch from 'node-fetch'
 import cors from 'cors'
 
-app.use(cors());
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method', 'x-access-token');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-  res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
-  next();
-})
+
 /*
 const options = {
     definition: {
@@ -41,8 +34,17 @@ const app = Express();
 app.use(Express.json());
 app.use(Express.urlencoded({extended:true})); 
 app.use(Morgan('dev'))
+app.use(cors());
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method', 'x-access-token');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+  res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+  next();
+})
 //app.use(RutasUsuario)
 app.set('puerto', process.env.PORT || 3200)
+
 
 
 //GET con  
