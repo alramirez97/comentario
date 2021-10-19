@@ -90,7 +90,7 @@ app.get("/", async(req,response)=>{
       }
   })
 
-  const opinion = await Opinion.find().sort({ $natural:-1 }).limit(1)
+  const opinion = await Opinion.find().sort({ $natural:-1 }).limit(3)
   response.send(opinion);
 }) 
 
